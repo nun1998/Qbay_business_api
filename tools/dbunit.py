@@ -2,7 +2,6 @@ import pymysql
 
 
 class DBUnit:
-
     __conn = None
     __cursor = None
 
@@ -14,7 +13,7 @@ class DBUnit:
                 port=3306,
                 user="test123",
                 password='!Qwer1234',
-                database='test123'
+                database='test_case_business'
             )
         return cls.__conn
 
