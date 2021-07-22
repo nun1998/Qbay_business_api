@@ -60,6 +60,6 @@ class DBUnit:
 
 
 if __name__ == "__main__":
-    sql = "select * from login"
+    sql = "select * from sub_account"
     data = DBUnit.exe_sql(sql)
     print(data)

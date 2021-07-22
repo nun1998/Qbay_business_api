@@ -48,5 +48,5 @@ class TestLogin(unittest.TestCase):
         self.assertEqual(status_code, response.status_code)
 
         if response.status_code == 200:
-            app.TOKEN = "Bearer" + response.json().get("access_token")
+            app.TOKEN = "Bearer " + response.json().get("access_token")
             app.header_data["Authorization"] = app.TOKEN
